@@ -1,0 +1,25 @@
+{
+  "name": "catalogo-jerarquico-cte-recursiva",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "migrate": "tsx scripts/migrar.ts data/catalogo.sqlite",
+    "seed": "tsx scripts/seed.ts data/catalogo.sqlite",
+    "test": "vitest run",
+    "dev": "tsx scripts/seed.ts data/catalogo.sqlite"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.11"
+  }
+}
